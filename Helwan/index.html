@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Normalize Css -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Corinthia:wght@700&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post">
+            <!-- Username -->
+            <div class="field">
+                <input id="username" type="text" required>
+                <span></span>
+                <label for="">Username</label>
+            </div>
+            <!-- Email -->
+            <div class="field">
+                <input id="email" type="email" required>
+                <span></span>
+                <label for="">Email</label>
+            </div>
+            <!-- Password -->
+            <div class="field">
+                <input id="password" type="password" required>
+                <span></span>
+                <label for="">Password</label>
+            </div>
+            <div class="pass">Forget Password?</div>
+                <div class="btn">
+                    <a 
+                    onclick="BavleyHomePage(this.href)"  
+                    class="log-in" 
+                    href="#">Login</a>  
+                </div>
+            <!-- signIn  -->
+            <div class="sign-in">
+                <span> Not a member? </span>   
+                <a  href="#">Sign in</a>
+            </div>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

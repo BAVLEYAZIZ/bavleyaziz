@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car showroom</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">vichies</a>
+            <div class="icon">
+                <span class="burger-icon"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#porsche">porche</a></li>
+                <li><a href="#ferrari">ferrari</a></li>
+                <li><a href="#Range-Rover">Range Rover</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Landing Section -->
+    <div class="container" id="home">
+        <div class="landing">
+            <video src="images/landing.mp4" autoplay muted loop></video>
+            <div class="into-text">
+                <h1><span>Welcome </span>To our car showroom</h1>
+                <button class="btn"><a href="#porsche">Details</a></button>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start porch -->
+    <div class="services" id="porsche">
+        <div class="container">
+            <!-- start special Title -->
+            <h2 class="special-Title">PORSCHE</h2>
+            <!-- End special Title -->
+        </div>
+
+        <!-- start card --> 
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img class="car" src="images/porsch-119.jpg" >
+                </div>
+                <div class="content">
+                    <h3>porsche 119</h3>
+                    <p>price: 20000$</p>
+                    <button><a href="#"> Buy</a></button>
+                </div>    
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img class="car" src="images/porsche-cayenne.jpg" >
+                </div>
+                <div class="content">
+                    <h3>cayenne</h3>
+                    <p>price: 30000$</p>
+                    <button><a href="#">Buy</a> </button>
+                </div>    
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img class="car" src="images/porsche-taycan.jpg" >
+                </div>
+                <div class="content">
+                    <h3>Taycan</h3>
+                    <p>price: 35000$</p>
+                    <button><a href="#">Buy</a> </button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- End porch -->
+    <!-- Start ferrari -->
+    <div id="ferrari" class="container ferrari">
+        <div class="container">
+            <!-- start special Title -->
+            <h2 class="special-Title">FERRARI</h2>
+            <!-- End special Title -->
+        </div>
+        <div class="content-ferrari">
+            <div class="text-ferrari">
+                <h2>ferrari 296 gtb </h2>
+
+                <a href="#">More</a>
+            </div>
+            <div class="image">
+                <img class="main-car" src="images/ferrari-296-gts-black.jpg">
+            </div>
+        </div>
+        <div class="icon-ferrari">
+            <img onclick="changeCar(this.src)" class="mmm1" src="images/ferrari-296-gts-red.jpg">
+            <img onclick="changeCar(this.src)" class="mmm2" src="images/ferrari-296-gts-black.jpg">
+            <img onclick="changeCar(this.src)" class="mmm3" src="images/ferrari-296-gts-blue.jpg">
+            <img onclick="changeCar(this.src)" class="mmm4" src="images/ferrari-296-gts-white.jpg">
+            <img onclick="changeCar(this.src)" class="mmm5" src="images/ferrari-296-gts-yellow.jpg">
+        </div>
+    </div>
+    
+    <!-- End ferrari -->
+    <!-- Start Range Rover -->
+    <div class="container" id="Range-Rover">
+        <!-- start special Title -->
+        <h2 class="special-Title">Range Rover</h2>
+        <!-- End special Title -->
+        <div class="card">
+            <span class="material-icons-outlined">
+                <i class="fa-thin fa-360-degrees"></i></div>
+    </div>
+    <!-- End Range Rover -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start drone Animation -->
+    <div class="drones">
+        <img src="images/whiles.png" class="whiles">
+        <img src="images/whiles.png" class="whiles">
+        <img src="images/whiles.png" class="whiles">
+        <img src="images/whiles.png" class="whiles">
+        <img src="images/drone.png" class="drone">
+    </div>
+    <!-- End drone Animation -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>

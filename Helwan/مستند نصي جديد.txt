@@ -1,0 +1,60 @@
+1- navbar
+2- background
+3- h1 
+Welcome To our car showroom
+4 - button
+5 - special titel
+4 - car cards
+
+
+
+// Form
+
+
+
+// Example_1 :
+// print Data Input In Console 
+let userInput = document.querySelector("[name= 'username']");
+let userAge = document.querySelector("[name= 'age']");
+
+document.forms[0].onsubmit = function (e) {
+    let userValid = false ;  // Default Value
+    let ageValid = false ;
+
+    console.log(`Name : ${userInput.value}`)
+    console.log(`Number Of Name : ${userInput.value.length}`)
+    
+    console.log(`PassWord : ${userAge.value}`)
+    console.log(`Number Of PassWord : ${userAge.value.length}`)
+    
+};
+
+
+
+
+
+
+
+// Dont Send Data To Server if The Conditions Not Achieve  
+let userInput = document.querySelector("[name= 'username']");
+let userAge = document.querySelector("[name= 'age']");
+
+document.forms[0].onsubmit = function (e) {
+    let userValid = false ;  // Default Value
+    let ageValid = false ;  // Default Value
+
+    // input
+    if ( userInput.value !== "" && userInput.value.length <= 10 && isNaN(parseInt(userInput.value)) ) {
+        userValid = true 
+    }
+
+    // Age
+    if ( userAge.value !== "" && !isNaN(parseInt(userAge.value))) {
+        ageValid = true 
+    }
+
+    if (userValid === false || ageValid === false ) {
+        e.preventDefault();
+    }
+};
+

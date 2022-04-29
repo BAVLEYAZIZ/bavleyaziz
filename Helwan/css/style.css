@@ -1,0 +1,495 @@
+/* Start Variables */
+:root{
+    --section-background: #f4f4f4;
+    --seconder-color:#ff642f;
+    --font:Beau Rivage;
+    --special-title-color: #ebeced ;
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* overflow: hidden; */
+
+}
+/* Start Scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: #f6f6f6;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--seconder-color);
+    border-radius: 10px;
+}
+/* End Scrollbar */
+/* Start Navbar */
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container nav .logo{
+    text-decoration: none;
+    font-family: var(--font);
+    font-weight: 900;
+    font-size:30px;
+    letter-spacing: 2.5px;
+    color: var(--seconder-color);
+    text-transform: capitalize;
+
+}
+.container nav ul li{
+    display: inline-block;
+    margin-right: 12px;
+}
+.container nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: black;
+}
+.container nav li a:hover{
+    padding: 16px;
+    color: rgb(224, 225, 225);
+}
+/* .container .icon {
+    width: 30px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.container .icon span{
+    background-color: #333 ;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.container .icon span:first-child(1){
+    width: 100%;
+}
+.container .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+
+}
+.container .icon span:last-child(3){
+    width: 100%;
+} */
+/* End Navbar */
+
+/* Start Landing Section */
+.landing{
+    width: 100%;
+    height: calc( 100vh - 40px);
+    overflow: hidden;
+}
+.landing .into-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.landing .into-text span{
+    font-size: 50px;
+    color: var(--seconder-color);
+    font-family: var(--font);
+}
+.landing .into-text h1{
+    color: white;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    width: 170px;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--seconder-color);
+}
+.btn a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.btn:hover{
+    background-color: #da4d1e;
+}
+/* End Landing Section */
+/* Start Services */
+/* Start special title */
+.special-Title{
+    margin-top:60px ;
+    margin-bottom:60px ;
+    text-align:center;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    color: var(--special-title-color);
+    font-family: var(--font);
+    letter-spacing: 40px;
+    text-transform: uppercase;
+}
+/* End special title */
+/* .services .container{
+
+} */
+/* Start cards */
+.services .container{
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.card {
+    width: 290px;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    /* background-color: #f4f4f4; */
+    border-radius: 4px ;
+    box-shadow: 0;
+    transition: 0.4s;
+
+}
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2) ;
+}
+.imgBx{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.imgBx .car{
+    width: 260px;
+    height: 200px;
+}
+.container .content{
+    padding-top: 250px;
+    text-align: center;
+    color: white;
+}
+.content h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+.content p{
+    color: black;
+}
+.card button{
+    width: 60%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--seconder-color);
+    border: none;
+    border-radius: 20px;
+}
+.card button a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight:700;
+    letter-spacing: -0.3px;
+    padding: 20px;
+}
+.card button:hover {
+    background-color: #da4d1e;
+}
+/* End cards */
+/* End Services */
+/* Start ferrari */
+
+.content-ferrari{
+    /* margin-top: 90px; */
+    margin-bottom: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.content-ferrari .text-ferrari {
+    width: 40%;
+    color: #fff;
+}
+.content-ferrari .text-ferrari > h2{
+    text-transform: uppercase;
+    margin: 100px 20px;
+    font-size: 40px;
+    color: black;
+
+}
+.content-ferrari a{
+    text-decoration: none;
+    background-color: var(--seconder-color);
+    color: white;
+    padding: 18px 50px;
+    border-radius: 20px ;
+    margin-left: 100px;
+    
+
+}
+.content-ferrari a:hover{
+    background-color: #da4d1e;
+
+}
+.content-ferrari .image{
+    width: 40%;
+}
+.content-ferrari .image img{
+    width: 600px;
+    margin-bottom: 280px;
+}
+.main-car{
+    margin-top: -100px;
+}
+/* Start Icon Ferrari */
+.icon-ferrari {
+    margin-left: 430px;
+    margin-bottom: 60px;
+}  
+.icon-ferrari  img{
+    width: 80px;    
+    transition: 0.5s;
+
+} 
+.mmm1{
+    margin-left: 90px;
+}
+.mmm3{
+    margin-left: 360px;
+
+}
+.mmm4{
+    margin-left: 270px;
+}
+.mmm5{
+    margin-left: 180px;
+}
+.icon-ferrari  img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.icon-ferrari{
+    margin-bottom: 400px;
+    margin-top: -100px;
+}
+/* End Icon Ferrari */
+
+
+
+
+/* End ferrari */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* following cursor Animation "Drone"  */
+
+
+.drones{
+    position: absolute;
+    height: 369px;
+    width: 369px;
+    transform: translate(-50%,-50%) scale(20%);
+    transition: 1s ease;
+}
+img{
+    position: absolute;
+}
+.whiles:nth-child(1){
+    left: -18%;
+    top: -18%;
+}
+.whiles:nth-child(2){
+    right: -18%;
+    top: -18%;
+}
+.whiles:nth-child(3){
+    left: -18%;
+    bottom: -18%;
+}
+.whiles:nth-child(4){
+    right: -18%;
+    bottom: -18%;
+}
+.whiles{
+    animation: rotation 0.7s infinite linear;
+}
+@keyframes  rotation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
